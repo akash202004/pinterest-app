@@ -1,0 +1,19 @@
+<% include ./partials/header.ejs %>
+
+    <% posts.forEach(post=> { %>
+        <div id="one" class="flex items-center p-10">
+            <img id="one-img" class="w-70 h-full bg-center" src="/images/uploads/<%= post.image %>" alt="">
+            </img>
+
+            <div class="flex flex-col justify-center p-8 bg-white w-30 pb-[30vw]">
+                <h1 class="text-4xl font-bold mb-4">User : @<%= post.user.username %>
+                </h1>
+                <p class="text-gray-700">Description : <%= post.description %>
+                </p>
+            </div>
+
+        </div>
+
+        <% }) %>
+
+            <% include ./partials/footer.ejs %>

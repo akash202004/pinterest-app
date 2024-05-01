@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinterest</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <% if(nav === true){ %>
+    <div class="w-full px-10 py-3 flex items-center justify-between">
+      <div class="flex items-center justify-center gap-1">
+        <a href="/feed" class="flex items-center justify-center gap-1">
+          <h3 class="text-4xl font-bold">Pinterest</h3>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="" class="h-[3vw]">
+        </a>
+      </div>
+      <div class="flex items-center justify-center gap-3 font-semibold">
+        <a href="/profile" class="text-[18px]">PROFILE</a>
+        <a href="/feed" class="text-[18px]">FEED</a>
+        <a href="/logout" class="px-3 py-3 text-white rounded-lg bg-rose-600">LOGOUT</a>
+      </div>
+    </div>
+  <% } %>
+

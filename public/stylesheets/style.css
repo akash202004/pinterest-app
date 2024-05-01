@@ -1,0 +1,20 @@
+@font-face {
+  font-family: new;
+  src: url(./KFOmCnqEu92Fr1Mu4mxP.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: new;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#one{
+  height: calc(100vh - 100px);
+}
